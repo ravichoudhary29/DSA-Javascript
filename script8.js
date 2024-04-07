@@ -1,3 +1,4 @@
+// Binary Search
 // [-5, 2, 4, 6, 10] target = 10, index = 4, target = -5, index = 0;
 
 // Solution from Tutorial
@@ -19,6 +20,6 @@ const binarySearch = (arr, target) => {
   return -1;
 };
 
-console.log(binarySearch([-5, 2, 4, 6, 10], 10));
-console.log(binarySearch([-5, 2, 4, 6, 10], -5));
-console.log(binarySearch([-5, 2, 4, 6, 10], 6));
+console.log(binarySearch([-5, 2, 4, 6, 10], 10)); // Output: 4
+console.log(binarySearch([-5, 2, 4, 6, 10], -5)); // Output: 0
+console.log(binarySearch([-5, 2, 4, 6, 10], 6));  // Output: 3
