@@ -19,14 +19,38 @@
 // console.log(bubbleSort([-2, 6, 20, -10, -2, 8]));
 
 // Tutorial solution
+// Ascending shorting
 
-const bubbleSort = (arr) => {
+// const bubbleSortAscending = (arr) => {
+//   let temp;
+//   let swapped;
+//   do {
+//     swapped = false;
+//     for (i = 0; i < arr.length - 1; i++) {
+//       if (arr[i + 1] < arr[i]) {
+//         temp = arr[i + 1];
+//         arr[i + 1] = arr[i];
+//         arr[i] = temp;
+//         swapped = true;
+//       }
+//     }
+//   } while (swapped);
+//   return arr;
+// };
+
+// console.log(bubbleSortAscending([-2, -6, 56, -81, -20]));
+//Outputs: [-81, -20, -6, -2, 56]
+//Big-O => O(n^2)
+
+// Descending sorting
+
+const bubbleSortDescending = (arr) => {
   let temp;
   let swapped;
   do {
     swapped = false;
     for (i = 0; i < arr.length - 1; i++) {
-      if (arr[i + 1] < arr[i]) {
+      if (arr[i + 1] > arr[i]) {
         temp = arr[i + 1];
         arr[i + 1] = arr[i];
         arr[i] = temp;
@@ -37,6 +61,4 @@ const bubbleSort = (arr) => {
   return arr;
 };
 
-console.log(bubbleSort([-2, -6, 56, -81, -20]));
-//Outputs: [-81, -20, -6, -2, 56]
-//Big-O => O(n^2)
+console.log(bubbleSortDescending([-2, -6, 56, -81, -20]));
